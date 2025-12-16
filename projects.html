@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="tr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Projelerim - Profesyonel Portföy</title>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1754cf",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#111621",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white font-display overflow-x-hidden">
+<div class="relative flex min-h-screen w-full flex-col">
+<!-- Navbar -->
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-gray-200 dark:border-[#243047] px-4 md:px-10 py-3 bg-white dark:bg-[#111722] sticky top-0 z-50">
+  <div class="flex items-center gap-4 text-gray-900 dark:text-white">
+    <div class="size-8 flex items-center justify-center rounded-lg bg-primary/10 text-primary">
+      <span class="material-symbols-outlined">dataset</span>
+    </div>
+    <a href="index.html">
+      <h2 class="text-gray-900 dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]">
+        Mustafa Ölmezses
+      </h2>
+    </a>
+  </div>
+
+  <div class="hidden md:flex flex-1 justify-end gap-8">
+    <div class="flex items-center gap-9">
+      <!-- Aktif Sayfa -->
+      <a class="text-gray-600 dark:text-white text-sm font-medium leading-normal hover:text-primary transition-colors" href="index.html">Ana Sayfa</a>
+
+      <a class="text-primary text-sm font-semibold leading-normal"
+         href="projects.html">Projeler</a>
+
+      <a class="text-gray-600 dark:text-white text-sm font-medium leading-normal hover:text-primary transition-colors"
+         href="about.html">Hakkımda</a>
+
+      <a class="text-gray-600 dark:text-white text-sm font-medium leading-normal hover:text-primary transition-colors"
+         href="contacts.html">İletişim</a>
+    </div>
+
+    <a href="contacts.html"
+       class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary hover:bg-blue-700 transition-colors text-white text-sm font-bold leading-normal tracking-[0.015em]">
+      <span class="truncate">Bana Ulaşın</span>
+    </a>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div class="md:hidden text-gray-900 dark:text-white">
+    <span class="material-symbols-outlined">menu</span>
+  </div>
+</header>
+
+<main class="flex-1 flex flex-col items-center px-4 md:px-10 py-10 w-full">
+<div class="max-w-7xl w-full flex flex-col gap-8">
+<!-- Page Heading -->
+<section class="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 pb-6 border-b border-slate-200 dark:border-slate-800">
+<div class="flex flex-col gap-2 max-w-2xl">
+<h1 class="text-slate-900 dark:text-white text-4xl md:text-5xl font-black leading-tight tracking-tight">
+                            Projelerim
+                        </h1>
+<p class="text-slate-500 dark:text-slate-400 text-lg font-normal leading-relaxed">
+                            Yaratıcılık ve teknolojinin buluştuğu nokta. Son dönemde geliştirdiğim web, mobil ve tasarım projelerini keşfedin.
+                        </p>
+</div>
+<div class="flex gap-4">
+<div class="flex -space-x-3">
+<div class="w-10 h-10 rounded-full border-2 border-background-light dark:border-background-dark bg-slate-200 dark:bg-slate-700 bg-center bg-cover" data-alt="User avatar 1" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCY_FpS_J7oImuLCcKmaSllB6tD-rfL4Ps_IlRCMSIH8lv3J15vFlNJtOYrpKvy_CfiDhqaeus96E7x8n9VSbXpY-VFnNBwld-iu2LKBC_tuBkLrk_rvz3EyKQdhSHv7htD-pJGYnNQkOVMXBVL_YDAdHKLk93csatE-zkDyskGpW5kNkGxYTCz0yLrOVAsjPBKavvUonxq_1Wr1qH-vXhw83wVsaI69D5ZuQOCz6iwxxQEa58lREaMAAdGWtlKxmeTh5bqb78BosQN");'></div>
+<div class="w-10 h-10 rounded-full border-2 border-background-light dark:border-background-dark bg-slate-200 dark:bg-slate-700 bg-center bg-cover" data-alt="User avatar 2" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCVhTb6AZOpgZSZ2C3wSw278h7OxHvtzl1pXUszl_iGHrO7Ix0lg2U5v4ol0iHGmB-kOApVdzQPnm-Lk6XmGHukUWhEi2FkwBhZuTFFYG7EiWRLHYliAXKG1xYmceI9on94-IiTKBTdnJ58S0mI2Rmhvj0BkW8VcdYX-CZ24Ofr52QPE-NklQ4t3ZefR2yYyM6IBPFtEk7h_9eLaPNYJ8arvXuIY0BdunyOt9Lc0bvPrEAiV_DmVOiLKFtaamDr6cjQNzoi8l1j5uRF");'></div>
+<div class="w-10 h-10 rounded-full border-2 border-background-light dark:border-background-dark bg-slate-200 dark:bg-slate-700 flex items-center justify-center text-xs font-bold text-slate-500 dark:text-slate-300">
+                               +5
+                           </div>
+</div>
+<div class="flex flex-col justify-center">
+<span class="text-xs font-bold text-slate-900 dark:text-white">Takım Çalışmaları</span>
+<span class="text-xs text-slate-500 dark:text-slate-400">ve Bireysel Projeler</span>
+</div>
+</div>
+</section>
+<!-- Filter & Search Bar -->
+<section class="flex flex-col lg:flex-row gap-4 justify-between items-center sticky top-20 z-40 py-4 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm -mx-4 px-4 lg:mx-0 lg:px-0">
+
+<!-- Search -->
+<div class="w-full lg:w-auto min-w-[300px]">
+<label class="flex items-center h-10 w-full rounded-full bg-white dark:bg-[#1a2232] border border-slate-200 dark:border-slate-700 shadow-sm focus-within:ring-2 focus-within:ring-primary focus-within:border-primary transition-all overflow-hidden pr-2">
+<div class="pl-3 pr-2 text-slate-400 dark:text-slate-500">
+<span class="material-symbols-outlined text-[20px]">search</span>
+</div>
+<input class="w-full bg-transparent border-none focus:ring-0 text-sm text-slate-900 dark:text-white placeholder:text-slate-400 dark:placeholder:text-slate-500 h-full" placeholder="Proje veya teknoloji ara..."/>
+</label>
+</div>
+</section>
+<!-- Grid Layout -->
+<section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-fr">
+<!-- Card 1 -->
+<article class="group flex flex-col bg-white dark:bg-[#1a2232] rounded-xl overflow-hidden border border-slate-200 dark:border-slate-800 hover:border-primary/50 dark:hover:border-primary/50 transition-all duration-300 hover:shadow-xl hover:shadow-blue-500/10 hover:-translate-y-1">
+<div class="relative h-48 overflow-hidden bg-slate-100 dark:bg-slate-800">
+<img
+  src="img/usi.png"
+  alt="USI App"
+  class="w-full h-full object-contain bg-black transition-transform duration-500 group-hover:scale-110"
+/>
+<div class="absolute top-3 left-3 bg-black/60 backdrop-blur text-white text-xs font-bold px-2 py-1 rounded">Swift & Kotlin</div>
+</div>
+<div class="flex flex-col flex-1 p-5 gap-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">analytics</span>
+</div>
+<div>
+<h3 class="text-lg font-bold text-slate-900 dark:text-white leading-tight group-hover:text-primary transition-colors">USIApp</h3>
+<p class="text-xs text-slate-500 dark:text-slate-400">Mobil & Web Uygulaması</p>
+</div>
+</div>
+<p class="text-sm text-slate-600 dark:text-slate-300 line-clamp-3">
+                                USI Uygulaması, öğrencileri, akademisyenleri , Sanayi ve sektör profesyonellerini bir araya getirerek proje geliştirme sürecini tamamen dijital bir ortamda basitleştiren yenilikçi bir platformdur.
+                            </p>
+<div class="mt-auto pt-4 border-t border-slate-100 dark:border-slate-700/50 flex flex-col gap-4">
+<div class="flex flex-wrap gap-2">
+<span class="px-2 py-1 rounded bg-slate-100 dark:bg-[#243047] text-slate-600 dark:text-slate-300 text-xs font-medium">Swift</span>
+<span class="px-2 py-1 rounded bg-slate-100 dark:bg-[#243047] text-slate-600 dark:text-slate-300 text-xs font-medium">Kotlin</span>
+<span class="px-2 py-1 rounded bg-slate-100 dark:bg-[#243047] text-slate-600 dark:text-slate-300 text-xs font-medium">Node.js</span>
+<span class="px-2 py-1 rounded bg-slate-100 dark:bg-[#243047] text-slate-600 dark:text-slate-300 text-xs font-medium">Firebase</span>
+
+</div>
+<div class="flex gap-3">
+<button class="flex-1 h-9 flex items-center justify-center rounded-lg bg-slate-900 dark:bg-white text-white dark:text-slate-900 text-sm font-bold hover:opacity-90 transition-opacity">
+                                        İncele
+                                    </button>
+<a class="h-9 w-9 flex items-center justify-center rounded-lg border border-slate-200 dark:border-slate-700 text-slate-500 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors" href="#" title="Canlı Önizleme">
+<span class="material-symbols-outlined text-[20px]">open_in_new</span>
+</a>
+</div>
+</div>
+</div>
+</article>
+<!-- Card 2 -->
+<article class="group flex flex-col bg-white dark:bg-[#1a2232] rounded-xl overflow-hidden border border-slate-200 dark:border-slate-800 hover:border-primary/50 dark:hover:border-primary/50 transition-all duration-300 hover:shadow-xl hover:shadow-blue-500/10 hover:-translate-y-1">
+<div class="relative h-48 overflow-hidden bg-slate-100 dark:bg-slate-800">
+<img
+  src="img/habitify.png"
+  alt="USI App"
+  class="w-full h-full object-contain bg-black transition-transform duration-500 group-hover:scale-110"
+/>
+<div class="absolute top-3 left-3 bg-black/60 backdrop-blur text-white text-xs font-bold px-2 py-1 rounded">SwiftUI</div>
+</div>
+<div class="flex flex-col flex-1 p-5 gap-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-indigo-100 dark:bg-indigo-900/30 flex items-center justify-center text-indigo-600 dark:text-indigo-400">
+<span class="material-symbols-outlined">account_balance_wallet</span>
+</div>
+<div>
+<h3 class="text-lg font-bold text-slate-900 dark:text-white leading-tight group-hover:text-primary transition-colors">Habitify</h3>
+<p class="text-xs text-slate-500 dark:text-slate-400">Mobil Uygulama</p>
+</div>
+</div>
+<p class="text-sm text-slate-600 dark:text-slate-300 line-clamp-3">
+Take control of your life, habits, and goals with this app. It helps you build a healthy lifestyle, boost productivity, and stay consistent with your routines. Track progress with personalized reminders and statistics, and achieve your goals with ease and motivation.                            </p>
+<div class="mt-auto pt-4 border-t border-slate-100 dark:border-slate-700/50 flex flex-col gap-4">
+<div class="flex flex-wrap gap-2">
+<span class="px-2 py-1 rounded bg-slate-100 dark:bg-[#243047] text-slate-600 dark:text-slate-300 text-xs font-medium">SwiftUI</span>
+<span class="px-2 py-1 rounded bg-slate-100 dark:bg-[#243047] text-slate-600 dark:text-slate-300 text-xs font-medium">Firebase</span>
+<span class="px-2 py-1 rounded bg-slate-100 dark:bg-[#243047] text-slate-600 dark:text-slate-300 text-xs font-medium">UserDefaults</span>
+
+</div>
+<div class="flex gap-3">
+<button class="flex-1 h-9 flex items-center justify-center rounded-lg bg-slate-900 dark:bg-white text-white dark:text-slate-900 text-sm font-bold hover:opacity-90 transition-opacity">
+                                        İncele
+                                    </button>
+<a class="h-9 w-9 flex items-center justify-center rounded-lg border border-slate-200 dark:border-slate-700 text-slate-500 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors" href="#" title="Canlı Önizleme">
+<span class="material-symbols-outlined text-[20px]">open_in_new</span>
+</a>
+</div>
+</div>
+</div>
+</article>
+<!-- Card 3 -->
+<article class="group flex flex-col bg-white dark:bg-[#1a2232] rounded-xl overflow-hidden border border-slate-200 dark:border-slate-800 hover:border-primary/50 dark:hover:border-primary/50 transition-all duration-300 hover:shadow-xl hover:shadow-blue-500/10 hover:-translate-y-1">
+<div class="relative h-48 overflow-hidden bg-slate-100 dark:bg-slate-800">
+<img
+  src="img/qrmenu.png"
+  alt="USI App"
+  class="w-full h-full object-contain bg-black transition-transform duration-500 group-hover:scale-110"
+/>
+<div class="absolute top-3 left-3 bg-black/60 backdrop-blur text-white text-xs font-bold px-2 py-1 rounded">Web</div>
+</div>
+<div class="flex flex-col flex-1 p-5 gap-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-emerald-100 dark:bg-emerald-900/30 flex items-center justify-center text-emerald-600 dark:text-emerald-400">
+<span class="material-symbols-outlined">spa</span>
+</div>
+<div>
+<h3 class="text-lg font-bold text-slate-900 dark:text-white leading-tight group-hover:text-primary transition-colors">Cafe & Restaurant MENU</h3>
+<p class="text-xs text-slate-500 dark:text-slate-400">Web &amp; Uygulaması</p>
+</div>
+</div>
+<p class="text-sm text-slate-600 dark:text-slate-300 line-clamp-3">
+QR kod ile menüye erişim sağlayan çevrim içi bir menü uygulamasıdır.
+Kullanıcılar, mekânda bulunan QR kodu okutarak herhangi bir uygulama indirmeye gerek kalmadan menüyü görüntüleyebilir. Menü içerisinde yer alan ürünler detaylı şekilde listelenir; ürün adı, açıklaması, fiyatı ve görseli gibi bilgilere kolayca erişilebilir.
+İşletme tarafında ise ürün ekleme, silme, güncelleme gibi temel menü yönetim işlemleri yapılabilir. Menü içeriği anlık olarak güncellenebilir, böylece fiyat veya ürün değişiklikleri anında kullanıcılara yansıtılır. Bu sayede hem kullanıcılar için hızlı ve pratik bir deneyim sunulur hem de işletmeler için dijital, kolay yönetilebilir ve sürdürülebilir bir menü çözümü sağlanır.                            </p>
+<div class="mt-auto pt-4 border-t border-slate-100 dark:border-slate-700/50 flex flex-col gap-4">
+<div class="flex flex-wrap gap-2">
+<span class="px-2 py-1 rounded bg-slate-100 dark:bg-[#243047] text-slate-600 dark:text-slate-300 text-xs font-medium">Figma</span>
+<span class="px-2 py-1 rounded bg-slate-100 dark:bg-[#243047] text-slate-600 dark:text-slate-300 text-xs font-medium">Next.js</span>
+<span class="px-2 py-1 rounded bg-slate-100 dark:bg-[#243047] text-slate-600 dark:text-slate-300 text-xs font-medium">CSS Modules</span>
+</div>
+<div class="flex gap-3">
+<button class="flex-1 h-9 flex items-center justify-center rounded-lg bg-slate-900 dark:bg-white text-white dark:text-slate-900 text-sm font-bold hover:opacity-90 transition-opacity">
+                                        İncele
+                                    </button>
+<a class="h-9 w-9 flex items-center justify-center rounded-lg border border-slate-200 dark:border-slate-700 text-slate-500 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors" href="#" title="Behance Profili">
+<span class="material-symbols-outlined text-[20px]">design_services</span>
+</a>
+</div>
+</div>
+</div>
+</article>
+<!-- Card 4 -->
+<article class="group flex flex-col bg-white dark:bg-[#1a2232] rounded-xl overflow-hidden border border-slate-200 dark:border-slate-800 hover:border-primary/50 dark:hover:border-primary/50 transition-all duration-300 hover:shadow-xl hover:shadow-blue-500/10 hover:-translate-y-1">
+<div class="relative h-48 overflow-hidden bg-slate-100 dark:bg-slate-800">
+<img
+  src="img/starthub.png"
+  alt="USI App"
+  class="w-full h-full object-contain bg-black transition-transform duration-500 group-hover:scale-110"
+/>
+<div class="absolute top-3 left-3 bg-black/60 backdrop-blur text-white text-xs font-bold px-2 py-1 rounded">Mobile App</div>
+</div>
+<div class="flex flex-col flex-1 p-5 gap-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-fuchsia-100 dark:bg-fuchsia-900/30 flex items-center justify-center text-fuchsia-600 dark:text-fuchsia-400">
+<span class="material-symbols-outlined">rocket_launch</span>
+</div>
+<div>
+<h3 class="text-lg font-bold text-slate-900 dark:text-white leading-tight group-hover:text-primary transition-colors">StartHub</h3>
+<p class="text-xs text-slate-500 dark:text-slate-400">Mobile App</p>
+</div>
+</div>
+<p class="text-sm text-slate-600 dark:text-slate-300 line-clamp-3">
+Starthub, yenilikçi girişimcilerin bir araya gelerek ekip oluşturmalarını, deneyim paylaşımını teşvik etmelerini ve potansiyel yatırımcılarla bağlantı kurmalarını sağlayan bir platformdur.                            </p>
+<div class="mt-auto pt-4 border-t border-slate-100 dark:border-slate-700/50 flex flex-col gap-4">
+<div class="flex flex-wrap gap-2">
+<span class="px-2 py-1 rounded bg-slate-100 dark:bg-[#243047] text-slate-600 dark:text-slate-300 text-xs font-medium">Swift</span>
+<span class="px-2 py-1 rounded bg-slate-100 dark:bg-[#243047] text-slate-600 dark:text-slate-300 text-xs font-medium">Firebase</span>
+</div>
+<div class="flex gap-3">
+<button class="flex-1 h-9 flex items-center justify-center rounded-lg bg-slate-900 dark:bg-white text-white dark:text-slate-900 text-sm font-bold hover:opacity-90 transition-opacity">
+                                        İncele
+                                    </button>
+<a class="h-9 w-9 flex items-center justify-center rounded-lg border border-slate-200 dark:border-slate-700 text-slate-500 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors" href="#" title="Canlı Önizleme">
+<span class="material-symbols-outlined text-[20px]">open_in_new</span>
+</a>
+</div>
+</div>
+</div>
+</article>
+<!-- Card 5 -->
+<article class="group flex flex-col bg-white dark:bg-[#1a2232] rounded-xl overflow-hidden border border-slate-200 dark:border-slate-800 hover:border-primary/50 dark:hover:border-primary/50 transition-all duration-300 hover:shadow-xl hover:shadow-blue-500/10 hover:-translate-y-1">
+<div class="relative h-48 overflow-hidden bg-slate-100 dark:bg-slate-800">
+<img
+  src="img/angryBird.png"
+  alt="USI App"
+  class="w-full h-full object-contain bg-black transition-transform duration-500 group-hover:scale-110"
+/>
+<div class="absolute top-3 left-3 bg-black/60 backdrop-blur text-white text-xs font-bold px-2 py-1 rounded">Mobil</div>
+</div>
+<div class="flex flex-col flex-1 p-5 gap-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-amber-100 dark:bg-amber-900/30 flex items-center justify-center text-amber-600 dark:text-amber-400">
+<span class="material-symbols-outlined">database</span>
+</div>
+<div>
+<h3 class="text-lg font-bold text-slate-900 dark:text-white leading-tight group-hover:text-primary transition-colors">AngryBirdClone</h3>
+<p class="text-xs text-slate-500 dark:text-slate-400">Mobil Game</p>
+</div>
+</div>
+<p class="text-sm text-slate-600 dark:text-slate-300 line-clamp-3">
+                                SpriteKit mantığını ilerletmeye ve geliştirmeye yönelik olarak yaptığım AngryBird oyununun clone versiyonudur. Bu projede SpriteKit kullanarak 2D başlangıç seviye bir mobil uygulama geliştirdim.
+                            </p>
+<div class="mt-auto pt-4 border-t border-slate-100 dark:border-slate-700/50 flex flex-col gap-4">
+<div class="flex flex-wrap gap-2">
+<span class="px-2 py-1 rounded bg-slate-100 dark:bg-[#243047] text-slate-600 dark:text-slate-300 text-xs font-medium">Swift</span>
+<span class="px-2 py-1 rounded bg-slate-100 dark:bg-[#243047] text-slate-600 dark:text-slate-300 text-xs font-medium">CoreData</span>
+<span class="px-2 py-1 rounded bg-slate-100 dark:bg-[#243047] text-slate-600 dark:text-slate-300 text-xs font-medium">SpriteKit</span>
+</div>
+<div class="flex gap-3">
+<button class="flex-1 h-9 flex items-center justify-center rounded-lg bg-slate-900 dark:bg-white text-white dark:text-slate-900 text-sm font-bold hover:opacity-90 transition-opacity">
+                                        İncele
+                                    </button>
+<a class="h-9 w-9 flex items-center justify-center rounded-lg border border-slate-200 dark:border-slate-700 text-slate-500 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors" href="#" title="GitHub Deposu">
+<span class="material-symbols-outlined text-[20px]">code</span>
+</a>
+</div>
+</div>
+</div>
+</article>
+<!-- Card 6 -->
+<article class="group flex flex-col bg-white dark:bg-[#1a2232] rounded-xl overflow-hidden border border-slate-200 dark:border-slate-800 hover:border-primary/50 dark:hover:border-primary/50 transition-all duration-300 hover:shadow-xl hover:shadow-blue-500/10 hover:-translate-y-1">
+<div class="relative h-48 overflow-hidden bg-slate-100 dark:bg-slate-800">
+<img
+  src="img/todo.png"
+  alt="USI App"
+  class="w-full h-full object-contain bg-black transition-transform duration-500 group-hover:scale-110"
+/>
+<div class="absolute top-3 left-3 bg-black/60 backdrop-blur text-white text-xs font-bold px-2 py-1 rounded">Mobile App</div>
+</div>
+<div class="flex flex-col flex-1 p-5 gap-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-purple-100 dark:bg-purple-900/30 flex items-center justify-center text-purple-600 dark:text-purple-400">
+<span class="material-symbols-outlined">rocket_launch</span>
+</div>
+<div>
+<h3 class="text-lg font-bold text-slate-900 dark:text-white leading-tight group-hover:text-primary transition-colors">TodoList</h3>
+<p class="text-xs text-slate-500 dark:text-slate-400">Mobile App</p>
+</div>
+</div>
+<p class="text-sm text-slate-600 dark:text-slate-300 line-clamp-3">
+                                Kullanıcıların yapılacaklar listesini kaydetiklerini ve tamamladıkları zaman silebildikleri bir basic ToDoApp.
+                            </p>
+<div class="mt-auto pt-4 border-t border-slate-100 dark:border-slate-700/50 flex flex-col gap-4">
+<div class="flex flex-wrap gap-2">
+<span class="px-2 py-1 rounded bg-slate-100 dark:bg-[#243047] text-slate-600 dark:text-slate-300 text-xs font-medium">SwiftUI</span>
+<span class="px-2 py-1 rounded bg-slate-100 dark:bg-[#243047] text-slate-600 dark:text-slate-300 text-xs font-medium">MVVM</span>
+<span class="px-2 py-1 rounded bg-slate-100 dark:bg-[#243047] text-slate-600 dark:text-slate-300 text-xs font-medium">UserDefaults</span>
+</div>
+<div class="flex gap-3">
+<button class="flex-1 h-9 flex items-center justify-center rounded-lg bg-slate-900 dark:bg-white text-white dark:text-slate-900 text-sm font-bold hover:opacity-90 transition-opacity">
+                                        İncele
+                                    </button>
+<a class="h-9 w-9 flex items-center justify-center rounded-lg border border-slate-200 dark:border-slate-700 text-slate-500 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors" href="#" title="Canlı Önizleme">
+<span class="material-symbols-outlined text-[20px]">open_in_new</span>
+</a>
+</div>
+</div>
+</div>
+</article>
+</section>
+<!-- Pagination -->
+<div class="flex justify-center mt-8">
+<button class="flex min-w-[120px] cursor-pointer items-center justify-center gap-2 overflow-hidden rounded-lg h-10 px-6 bg-slate-200 dark:bg-[#243047] text-slate-700 dark:text-white hover:bg-slate-300 dark:hover:bg-[#32415d] transition-colors text-sm font-bold leading-normal">
+<span>Daha Fazla Göster</span>
+<span class="material-symbols-outlined text-[18px]">expand_more</span>
+</button>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="border-t border-slate-200 dark:border-[#243047] py-8 bg-white dark:bg-[#111621]">
+<div class="max-w-7xl mx-auto px-4 md:px-10 flex flex-col md:flex-row justify-between items-center gap-4">
+<div class="flex items-center gap-2">
+<div class="size-6 text-slate-400 dark:text-slate-600">
+<svg class="h-full w-full" fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M8.57829 8.57829C5.52816 11.6284 3.451 15.5145 2.60947 19.7452C1.76794 23.9758 2.19984 28.361 3.85056 32.3462C5.50128 36.3314 8.29667 39.7376 11.8832 42.134C15.4698 44.5305 19.6865 45.8096 24 45.8096C28.3135 45.8096 32.5302 44.5305 36.1168 42.134C39.7033 39.7375 42.4987 36.3314 44.1494 32.3462C45.8002 28.361 46.2321 23.9758 45.3905 19.7452C44.549 15.5145 42.4718 11.6284 39.4217 8.57829L24 24L8.57829 8.57829Z" fill="currentColor"></path>
+</svg>
+</div>
+<p class="text-slate-500 dark:text-slate-400 text-sm">Mustafa Ölmezses © 2025 Tüm hakları saklıdır.</p>
+</div>
+<div class="flex gap-6">
+<a class="text-slate-500 dark:text-slate-400 hover:text-primary transition-colors text-sm" href="https://github.com/molmezses">GitHub</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-primary transition-colors text-sm" href="https://www.linkedin.com/in/mustafa-ölmezses-423134259/">LinkedIn</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-primary transition-colors text-sm" href="https://medium.com/@mustafaolmezses">Medium</a>
+</div>
+</div>
+</footer>
+</div>
+</body></html>

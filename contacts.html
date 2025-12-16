@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="tr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>İletişim - Portfolyo</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Theme Config -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1754cf",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#111621",
+                        "card-dark": "#1a2232",
+                        "border-dark": "#344465",
+                        "text-muted": "#93a5c8"
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
+    <!-- EmailJS -->
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+</head>
+<body class="bg-background-light dark:bg-background-dark min-h-screen flex flex-col overflow-x-hidden">
+<!-- Navbar -->
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-gray-200 dark:border-[#243047] px-4 md:px-10 py-3 bg-white dark:bg-[#111722] sticky top-0 z-50">
+  <div class="flex items-center gap-4 text-gray-900 dark:text-white">
+    <div class="size-8 flex items-center justify-center rounded-lg bg-primary/10 text-primary">
+      <span class="material-symbols-outlined">dataset</span>
+    </div>
+    <a href="index.html">
+      <h2 class="text-gray-900 dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]">
+        Mustafa Ölmezses
+      </h2>
+    </a>
+  </div>
+
+  <div class="hidden md:flex flex-1 justify-end gap-8">
+    <div class="flex items-center gap-9">
+      <!-- Aktif Sayfa -->
+      <a class="text-gray-600 dark:text-white text-sm font-medium leading-normal hover:text-primary transition-colors" href="index.html">Ana Sayfa</a>
+
+      <a class="text-gray-600 dark:text-white text-sm font-medium leading-normal hover:text-primary transition-colors"
+         href="projects.html">Projeler</a>
+
+      <a class="text-gray-600 dark:text-white text-sm font-medium leading-normal hover:text-primary transition-colors"
+         href="about.html">Hakkımda</a>
+
+      <a class="text-primary text-sm font-semibold leading-normal"
+         href="contacts.html">İletişim</a>
+    </div>
+
+    <a href="contacts.html"
+       class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary hover:bg-blue-700 transition-colors text-white text-sm font-bold leading-normal tracking-[0.015em]">
+      <span class="truncate">Bana Ulaşın</span>
+    </a>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div class="md:hidden text-gray-900 dark:text-white">
+    <span class="material-symbols-outlined">menu</span>
+  </div>
+</header>
+
+<!-- Main Content -->
+<main class="flex-1 flex justify-center py-10 px-4 md:px-10 lg:px-20">
+<div class="flex flex-col max-w-[1200px] w-full gap-8">
+<!-- Page Heading & Intro -->
+<div class="flex flex-col gap-3">
+<h1 class="text-gray-900 dark:text-white text-4xl md:text-5xl font-black leading-tight tracking-[-0.033em]">
+                    Bir Projeniz mi Var? <span class="text-primary">Konuşalım.</span>
+</h1>
+<p class="text-gray-500 dark:text-[#93a5c8] text-lg font-normal leading-relaxed max-w-[720px]">
+                    Yeni fikirleri hayata geçirmeyi seviyorum. Aşağıdaki formu doldurarak veya doğrudan iletişim bilgilerimi kullanarak bana ulaşabilirsiniz. En kısa sürede size dönüş yapacağım.
+                </p>
+</div>
+<div class="flex flex-col lg:flex-row gap-12 mt-8">
+<!-- Contact Info Column -->
+<div class="flex-1 flex flex-col gap-8">
+<!-- Contact Cards -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-4">
+<div class="flex gap-4 rounded-xl border border-gray-200 dark:border-[#344465] bg-white dark:bg-[#1a2232] p-5 hover:border-primary/50 transition-colors group">
+<div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-[24px]">mail</span>
+</div>
+<div class="flex flex-col justify-center">
+<h3 class="text-gray-900 dark:text-white text-base font-bold leading-tight">E-posta</h3>
+<a class="text-gray-500 dark:text-[#93a5c8] text-sm font-normal leading-normal hover:text-primary transition-colors" href="mailto:iletisim@ornek.com">mustafaolmezses@gmail.com</a>
+</div>
+</div>
+<div class="flex gap-4 rounded-xl border border-gray-200 dark:border-[#344465] bg-white dark:bg-[#1a2232] p-5 hover:border-primary/50 transition-colors group">
+<div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-[24px]">call</span>
+</div>
+<div class="flex flex-col justify-center">
+<h3 class="text-gray-900 dark:text-white text-base font-bold leading-tight">Telefon</h3>
+<a class="text-gray-500 dark:text-[#93a5c8] text-sm font-normal leading-normal hover:text-primary transition-colors" href="tel:+905551234567">+90 5055370194</a>
+</div>
+</div>
+<div class="flex gap-4 rounded-xl border border-gray-200 dark:border-[#344465] bg-white dark:bg-[#1a2232] p-5 hover:border-primary/50 transition-colors group">
+<div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-[24px]">location_on</span>
+</div>
+<div class="flex flex-col justify-center">
+<h3 class="text-gray-900 dark:text-white text-base font-bold leading-tight">Konum</h3>
+<p class="text-gray-500 dark:text-[#93a5c8] text-sm font-normal leading-normal">Ankara, Türkiye</p>
+</div>
+</div>
+</div>
+<!-- Map Image -->
+<div class="rounded-xl overflow-hidden border border-gray-200 dark:border-[#344465] h-64 w-full relative group">
+<img alt="Map visualization of Istanbul, Turkey showing city streets and districts in a dark stylized theme" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-80 hover:opacity-100" data-alt="Stylized dark map showing the location in Istanbul" data-location="Istanbul, Turkey" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAEtq7LCugt3MtrsfUSPp10i5tavq378thuaXNmkaZl41EnvVhjg-Ilbkx_-GczifiFO3JKAiJarQZPKuAXBcUtwJZt83o5WR-uuyqzI-MyuEoZcF0oO7bQzayioLNKkjwpP9izABCIJ_JTrs9bj10NBNdm2w1HRrXdQFuiD1zfyJKqtib9EC3hTwYLE0t8qeWzSAF5nWa5RrfIzdCnYuQqUFRkHBxuPI6LU6RxY0ogNjfDHGgLXeGEQdMTnfH3SHvuNcAxWZUczwER"/>
+<div class="absolute inset-0 bg-gradient-to-t from-[#111621] via-transparent to-transparent opacity-60"></div>
+<div class="absolute bottom-4 left-4 bg-white/10 backdrop-blur-md px-3 py-1 rounded-full border border-white/10 text-white text-xs font-medium">
+                            Ofis Konumu
+                        </div>
+</div>
+</div>
+<!-- Contact Form Column -->
+<div class="flex-[1.5] bg-white dark:bg-[#1a2232] border border-gray-200 dark:border-[#344465] rounded-2xl p-6 md:p-8 shadow-sm">
+<form id="contact-form" class="flex flex-col gap-6" method="POST">
+<div class="flex flex-col md:flex-row gap-6">
+<label class="flex flex-col flex-1 gap-2">
+<span class="text-gray-900 dark:text-white text-sm font-semibold leading-normal">Ad Soyad</span>
+<input
+  name="name"
+  class="form-input w-full rounded-lg border border-gray-300 dark:border-[#344465] bg-gray-50 dark:bg-[#111621] px-4 py-3 text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-[#93a5c8] focus:border-primary focus:ring-1 focus:ring-primary focus:outline-none transition-shadow"
+  placeholder="Adınız ve Soyadınız"
+  type="text"
+/>
+</label>
+<label class="flex flex-col flex-1 gap-2">
+<span class="text-gray-900 dark:text-white text-sm font-semibold leading-normal">E-posta</span>
+<input
+  name="email"
+  class="form-input w-full rounded-lg border border-gray-300 dark:border-[#344465] bg-gray-50 dark:bg-[#111621] px-4 py-3 text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-[#93a5c8] focus:border-primary focus:ring-1 focus:ring-primary focus:outline-none transition-shadow"
+  placeholder="ornek@email.com"
+  type="email"
+/>
+</label>
+</div>
+<label class="flex flex-col gap-2">
+<span class="text-gray-900 dark:text-white text-sm font-semibold leading-normal">Konu</span>
+<select
+  name="subject"
+  class="form-select w-full rounded-lg border border-gray-300 dark:border-[#344465] bg-gray-50 dark:bg-[#111621] px-4 py-3 text-gray-900 dark:text-white focus:border-primary focus:ring-1 focus:ring-primary focus:outline-none transition-shadow"
+>
+<option>Genel Sorular</option>
+<option>Proje Teklifi</option>
+<option>İşbirliği</option>
+<option>Diğer</option>
+</select>
+</label>
+<label class="flex flex-col gap-2">
+<span class="text-gray-900 dark:text-white text-sm font-semibold leading-normal">Mesajınız</span>
+<textarea
+  name="message"
+  class="form-textarea w-full min-h-[160px] resize-y rounded-lg border border-gray-300 dark:border-[#344465] bg-gray-50 dark:bg-[#111621] px-4 py-3 text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-[#93a5c8] focus:border-primary focus:ring-1 focus:ring-primary focus:outline-none transition-shadow"
+  placeholder="Projenizden bahsedin..."
+></textarea>
+</label>
+<div class="flex items-center justify-between mt-2">
+<button class="flex items-center gap-2 rounded-lg bg-primary px-8 py-3 text-white text-base font-bold leading-normal hover:bg-blue-700 active:scale-95 transition-all shadow-lg shadow-blue-900/20" type="submit">
+<span>Mesajı Gönder</span>
+<span class="material-symbols-outlined text-[20px]">send</span>
+</button>
+</div>
+</form>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="mt-auto border-t border-solid border-gray-200 dark:border-[#243047] py-6 px-4 md:px-10 bg-white dark:bg-[#111722]">
+<div class="max-w-[1200px] mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-gray-500 dark:text-[#93a5c8] text-sm font-medium">© 2025 Mustafa Ölmezses. Tüm hakları saklıdır.</p>
+<div class="flex gap-6">
+<a class="text-gray-500 dark:text-[#93a5c8] text-sm font-medium hover:text-primary transition-colors" href="#">Gizlilik Politikası</a>
+<a class="text-gray-500 dark:text-[#93a5c8] text-sm font-medium hover:text-primary transition-colors" href="#">Kullanım Şartları</a>
+</div>
+</div>
+</footer>
+</body></html>
